@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:jawah="http://schemas.android.com/apk/res/android"
+    jawah:layout_width="match_parent"
+    jawah:layout_height="match_parent"
+    >
+
+    <ImageView
+        jawah:id="@+id/img1"
+        jawah:layout_width="280dp"
+        jawah:layout_height="280dp"
+        jawah:background="@color/purple_200" />
+
+    <TextView
+        jawah:id="@+id/img2"
+        jawah:layout_width='match_parent'
+        jawah:layout_height="match_parent"
+        jawah:layout_below="@id/img1"
+        jawah:background="@color/purple_700" />
+    <LinearLayout
+        jawah:layout_width="match_parent"
+        jawah:layout_height="match_parent"
+        jawah:layout_above="@id/img2"
+        jawah:layout_toRightOf="@id/img1"
+        jawah:orientation="vertical">
+
+        <EditText
+            jawah:hint="email"
+            jawah:layout_width="match_parent"
+            jawah:layout_height="wrap_content"
+            jawah:layout_weight="1"
+            jawah:gravity="center"/>
+
+        <EditText
+            jawah:layout_width="match_parent"
+            jawah:layout_height="wrap_content"
+            jawah:hint="password"
+            jawah:layout_weight="1"
+            jawah:gravity="center"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

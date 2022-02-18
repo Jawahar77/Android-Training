@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:jawa="http://schemas.android.com/apk/res/android"
+    jawa:layout_width="match_parent"
+    jawa:layout_height="match_parent"
+    jawa:orientation="vertical">
+
+    <ImageView
+        jawa:layout_marginTop="50dp"
+        jawa:layout_width="match_parent"
+        jawa:layout_height="wrap_content"
+        jawa:src="@drawable/download"/>
+
+    <EditText
+        jawa:id="@+id/usern"
+        jawa:hint="username"
+        jawa:inputType="text"
+        jawa:layout_width="match_parent"
+        jawa:layout_height="80dp"
+        jawa:gravity="center"
+        jawa:layout_marginTop="10dp"
+        jawa:layout_marginLeft="15dp"
+        jawa:layout_marginRight="15dp"
+        jawa:drawableLeft="@drawable/ic_baseline_supervised_user_circle_24"/>
+
+    <EditText
+        jawa:id="@+id/passn"
+        jawa:inputType="textPassword"
+        jawa:hint="password"
+        jawa:layout_width="match_parent"
+        jawa:layout_height="80dp"
+        jawa:gravity="center"
+        jawa:layout_margin="15dp"
+        jawa:drawableLeft="@drawable/ic_baseline_security_24" />
+    <Button
+        jawa:id="@+id/btttn"
+        jawa:text="login"
+        jawa:layout_width="150dp"
+        jawa:layout_height="70dp"
+        jawa:layout_gravity="center"
+        />
+    <TextView
+        jawa:id="@+id/errr"
+        jawa:layout_width="wrap_content"
+        jawa:layout_height="wrap_content"
+        jawa:text=""
+        jawa:textColor="@color/purple_700"
+        jawa:layout_gravity="center"
+        jawa:layout_marginTop="30dp"/>
+    <TextView
+        jawa:id="@+id/movTOsign"
+        jawa:layout_width="wrap_content"
+        jawa:layout_height="wrap_content"
+        jawa:text=" i don't have an account sign up"
+
+        jawa:layout_gravity="center"
+        jawa:layout_marginTop="30dp"/>
+
+
+</LinearLayout>

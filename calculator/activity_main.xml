@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_marginTop="30dp"
+        android:textSize="30dp"
+        android:id="@+id/displ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Result"
+        android:textColor="@color/teal_700" />
+
+    <EditText
+        android:inputType="number"
+        android:id="@+id/num1"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="num 1"
+        android:textAlignment="center"
+        />
+    <EditText
+        android:inputType="number"
+        android:id="@+id/num2"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="num 2"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="addition"
+        android:layout_gravity="center"
+        />
+    <Button
+        android:id="@+id/sub"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="subraction"
+        android:layout_gravity="center"
+        />
+    <Button
+        android:id="@+id/multi"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="multiplication"
+        android:layout_gravity="center"
+        />
+    <Button
+        android:id="@+id/divi"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="division"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:id="@+id/cambut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="access camera"/>
+
+    <ImageView
+        android:id="@+id/camview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@color/black"
+        />
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp">
+
+    <DatePicker
+        android:id="@+id/datepike"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+    <Button
+        android:id="@+id/selecDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selectdate"/>
+    <TextView
+        android:id="@+id/dissp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hoeofehv"/>
+
+    <TimePicker
+        android:id="@+id/timing"
+
+        android:timePickerMode="spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/dissp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hoeofehv"/>
+    <AnalogClock
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"/>
+    <DigitalClock
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"/>
+
+</LinearLayout>

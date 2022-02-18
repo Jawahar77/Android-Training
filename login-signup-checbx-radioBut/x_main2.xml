@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <CheckBox
+        android:id="@+id/food1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="boori $10"/>
+    <CheckBox
+        android:id="@+id/food2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="idly $20"/>
+
+    <CheckBox
+        android:id="@+id/food3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="doosa $30"/>
+    <Button
+        android:id="@+id/orderbut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="place order"/>
+
+  <RadioGroup
+      android:id="@+id/groupbut"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      >
+      <RadioButton
+          android:id="@+id/male"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="male"/>
+      <RadioButton
+          android:id="@+id/female"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="female"/>
+  </RadioGroup>
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="select"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/autocom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+
+</LinearLayout>

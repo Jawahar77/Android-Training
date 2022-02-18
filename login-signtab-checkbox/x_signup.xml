@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:jawa="http://schemas.android.com/apk/res/android"
+    jawa:layout_width="match_parent"
+    jawa:layout_height="match_parent"
+    jawa:orientation="vertical">
+
+<ImageView
+    jawa:layout_marginTop="50dp"
+    jawa:layout_width="match_parent"
+    jawa:layout_height="wrap_content"
+    jawa:src="@drawable/images"
+    />
+
+    <EditText
+        jawa:id="@+id/emails"
+        jawa:hint="Email"
+        jawa:inputType="textEmailAddress"
+        jawa:layout_width="match_parent"
+        jawa:layout_height="70dp"
+        jawa:gravity="center"
+        jawa:layout_marginTop="10dp"
+        jawa:layout_marginLeft="15dp"
+        jawa:layout_marginRight="15dp"/>
+
+    <EditText
+        jawa:id="@+id/passwd"
+        jawa:hint="password"
+        jawa:layout_width="match_parent"
+        jawa:layout_height="70dp"
+        jawa:gravity="center"
+        jawa:layout_margin="15dp"
+        jawa:inputType="textPassword"/>
+    <EditText
+        jawa:id="@+id/c_passwd"
+        jawa:inputType="textPassword"
+        jawa:hint="confirm_password"
+        jawa:layout_width="match_parent"
+        jawa:layout_height="70dp"
+        jawa:gravity="center"
+        jawa:layout_margin="15dp"/>
+    <Button
+        jawa:id="@+id/butter"
+        jawa:text="signUp"
+
+        jawa:layout_width="150dp"
+        jawa:layout_height="70dp"
+        jawa:layout_gravity="center"
+        />
+
+    <TextView
+        jawa:id="@+id/errortxt"
+        jawa:layout_width="wrap_content"
+        jawa:layout_height="wrap_content"
+        jawa:layout_gravity="center"
+        jawa:textColor="@color/black"/>
+
+</LinearLayout>
