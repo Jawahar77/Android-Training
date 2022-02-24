@@ -215,3 +215,75 @@ intent (in java)
                // i.putExtra("sms_body","i am using this do you want");
                startActivity(i);
 ----------------------------------------------------------------------
+######## OPTION MENU
+
+
+   @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_manu,menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.it1:
+                Toast.makeText(this,"it1",Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.it2:
+                Toast.makeText(this,"it2",Toast.LENGTH_SHORT).show();
+                break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+
+--------------------------------------------------------------------------------------
+#### context menu (long presseed item will show) in java
+
+
+   @Override
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        getMenuInflater().inflate(R.menu.main_manu,menu);
+        super.onCreateContextMenu(menu, v, menuInfo);
+    }
+    @Override
+    public boolean onContextItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.it1:
+                Toast.makeText(this, "it1", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.it2:
+                Toast.makeText(this, "it2", Toast.LENGTH_SHORT).show();
+                break;
+        }
+        return super.onContextItemSelected(item);
+    }
+------------------------------------------------------------------------
+####PopUp menu (in java)
+
+bb2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                PopupMenu popupMenu = new PopupMenu(getApplicationContext(), bb2);
+                popupMenu.getMenuInflater().inflate(R.menu.main_manu, popupMenu.getMenu());
+                popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    @Override
+                    public boolean onMenuItemClick(MenuItem menuItem) {
+                        switch (menuItem.getItemId()) {
+                            case R.id.it1:
+                                Toast.makeText(MainActivity.this, "itt1", Toast.LENGTH_SHORT).show();
+                                break;
+                            case R.id.it2:
+                                Toast.makeText(MainActivity.this, "itt2", Toast.LENGTH_SHORT).show();
+                                break;
+                        }
+                        return false;
+                    }
+                });
+                popupMenu.show();
+                return;
+            }
+        });
+    }
+------------------------------------------------------------------------------------------
