@@ -1,4 +1,4 @@
-package com.example.upi_payment;
+package com.example.upi_001;
 
 //import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,6 +14,8 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
+//import androidx.appcompat.app.AppCompatActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -127,7 +129,7 @@ public class MainActivity extends AppCompatActivity implements PaymentStatusList
             // Start payment / transaction
             easyUpiPayment.startPayment();
         } catch (Exception exception) {
-            Toast.makeText(this,"check the submittion",Toast.LENGTH_SHORT).show();
+            toast("Error"+exception.getMessage());
         }
     }
 
@@ -164,7 +166,7 @@ public class MainActivity extends AppCompatActivity implements PaymentStatusList
     private void onTransactionSuccess() {
         // Payment Success
         toast("Success");
-        imageView.setImageResource(R.drawable.sucess);
+        imageView.setImageResource(R.drawable.succes);
     }
 
     private void onTransactionSubmitted() {
@@ -185,6 +187,3 @@ public class MainActivity extends AppCompatActivity implements PaymentStatusList
 
 
 }
-
-
-
